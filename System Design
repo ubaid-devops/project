@@ -1,0 +1,32 @@
+# System design markdown
+echo "
+# System Design
+
+## Overview
+This document provides an overview of the system design for the data migration and automation project.
+
+## Components
+- **Data Migration**: Migrates data from DynamoDB to Postgres using Python and boto3.
+- **Data Transformation**: Uses AWS Lambda and Pandas for data transformation.
+- **Data Validation**: Validates data using custom scripts.
+- **API Development**: Develops and maintains APIs using Django.
+- **Automation**: Automates patching processes using Ansible and ELK stack.
+
+## Architecture Diagram
+![System Design](system_design.png)
+
+## Data Flow
+1. **Data Migration**: Data is extracted from DynamoDB and loaded into Postgres.
+2. **Data Transformation**: Transforms data using AWS Lambda functions and stores the transformed data.
+3. **Data Validation**: Validates data consistency between DynamoDB and Postgres.
+4. **API Development**: Exposes data and functionalities through REST APIs.
+5. **Automation**: Automates routine tasks and monitoring using Ansible and ELK stack.
+
+## Technologies Used
+- **AWS**: DynamoDB, Lambda, S3, EC2, CloudFormation
+- **Python**: Data processing and scripting
+- **Django**: Web framework for API development
+- **Postgres**: Database for storing transformed data
+- **ELK Stack**: Monitoring and logging
+- **Ansible**: Automation and configuration management
+" > docs/system_design.md
